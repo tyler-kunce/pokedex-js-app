@@ -10,3 +10,24 @@ let pokemonList = [
     {number: '#8', name: 'Wartortle', height: 1, type: 'Water'},
     {number: '#9', name: 'Blastoise', height: 1.6, type: 'Water'}
 ];
+
+//Part 1: for loop that writes each Pokemon's number, name, and height to DOM
+//Part 3b: integrated Part 1 and Part 3a
+for (let i = 0; i < pokemonList.length; i++) {
+    if (pokemonList[i].height > 1.8){
+        document.write(pokemonList[i].number + " " + pokemonList[i].name + " (height: " + pokemonList[i].height + ") " + "That's a big pokemon! ")
+    } else if (pokemonList[i].height < 1.8 && pokemonList[i].height > 1){
+        document.write(pokemonList[i].number + " " + pokemonList[i].name + " (height: " + pokemonList[i].height + ") " + "That's an average pokemon ")
+    } else {
+        document.write(pokemonList[i].number + " " + pokemonList[i].name + " (height: " + pokemonList[i].height + ") " + "That's a small pokemon ")
+    }
+};
+
+//Part 3a: conditional loop to evaluate Pokemon height
+/* if (pokemonList.height > 1.8){
+    document.write("That's a big pokemon!")
+} else if (pokemonList.height < 1.8 && pokemonList.height > 1){
+    document.write("That's an average pokemon")
+} else {
+    document.write("That's a small pokemon")
+} */
