@@ -31,29 +31,3 @@ let pokemonRepository = (function() {
 pokemonRepository.getAll().forEach(function(pokemon) {
     document.write("<p>" + pokemon.number + " " + pokemon.name + " (height: " + pokemon.height + ") " + "</p>");
 });
-
-//Ex1.5 Part 1
-// pokemonList.forEach(function(pokemon) {
-//     document.write("<p>" + pokemon.number + " " + pokemon.name + " (height: " + pokemon.height + ") " + "</p>");
-// });
-
-//Part 1: for loop that writes each Pokemon's number, name, and height to DOM
-//Part 3b: integrated Part 1 and Part 3a
-// for (let i = 0; i < pokemonList.length; i++) {
-//     if (pokemonList[i].height > 1.8){
-//         document.write("<p>" + pokemonList[i].number + " " + pokemonList[i].name + " (height: " + pokemonList[i].height + ") " + "That's a big pokemon! | " + "</p>")
-//     } else if (pokemonList[i].height < 1.8 && pokemonList[i].height > 1){
-//         document.write("<p>" + pokemonList[i].number + " " + pokemonList[i].name + " (height: " + pokemonList[i].height + ") " + "That's an average pokemon | " + "</p>")
-//     } else {
-//         document.write("<p>" + pokemonList[i].number + " " + pokemonList[i].name + " (height: " + pokemonList[i].height + ") " + "That's a small pokemon | " + "</p>")
-//     }
-// };
-
-//Part 3a: conditional loop to evaluate Pokemon height
-/* if (pokemonList.height > 1.8){
-    document.write("That's a big pokemon!")
-} else if (pokemonList.height < 1.8 && pokemonList.height > 1){
-    document.write("That's an average pokemon")
-} else {
-    document.write("That's a small pokemon")
-} */
