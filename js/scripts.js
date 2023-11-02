@@ -42,7 +42,7 @@ let pokemonRepository = (function () {
         pokeModalName.innerText = pokemon.name;
 
         let pokeModalHeight = document.createElement('p');
-        pokeModalHeight.innerText = pokemon.height;
+        pokeModalHeight.innerText = 'Height: ' + pokemon.height + 'm';
 
         let pokeModalImg = document.createElement('img');
         pokeModalImg.src = pokemon.imageUrl;

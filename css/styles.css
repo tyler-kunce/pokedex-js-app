@@ -111,6 +111,7 @@ li {
 
 .modal, .pokeModal {
     margin: auto;
+    margin-bottom: 350px;
     display: inline-block;
     box-sizing: border-box;
     background: #fff;
